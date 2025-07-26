@@ -24,12 +24,16 @@ Open VsCode and run:
 ```bash
 git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git in the terminal
 ```
+
 2.Install all requirments using:
+```bash
   pip install -r requirements.txt
+```
 
-3.Run python -m venv venv
+3.
+```bashRun python -m venv venv11```
 
-4. In the env.local.example file create API tokens or keys free of cost and place into respective placeholders or uncomment the tokens there
+3. In the env.local.example file create API tokens or keys free of cost and place into respective placeholders or uncomment the tokens there
 
 5.run the command
  ```bash
