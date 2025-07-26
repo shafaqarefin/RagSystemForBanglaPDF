@@ -18,8 +18,11 @@
 ## 💻 System Requirements
 - OS: Windows/macOS/Linux
 - Python 3.10+
-- At least 8GB RAM
-- 5GB free disk space
+- Tesseract OCR tool with Bangla language support  
+  👉 [Download Tesseract](https://github.com/tesseract-ocr/tesseract)  
+  ➕ For Bangla language data (`ben.traineddata`), download from:  
+  https://github.com/tesseract-ocr/tessdata/blob/main/ben.traineddata  
+  Place the file in your Tesseract `tessdata` folder (e.g., `C:\Program Files\Tesseract-OCR\tessdata`)
 
 ---
 
