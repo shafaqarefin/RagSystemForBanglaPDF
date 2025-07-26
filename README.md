@@ -160,9 +160,9 @@ Allows users to ask a natural language question (in English or Bangla), which is
 - `query` (string, required) – The question you want to ask
 - http://localhost:8000/ask?query=""  (Paste this in the browser after running fast api as shown above)
 
-#✅ Example Request
+### ✅ Example Request
 ```bash
-curl -X GET http://localhost:8000/ask?query=কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
+http://localhost:8000/ask?query=কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
 ```
 ---
 
