@@ -162,7 +162,7 @@ Allows users to ask a natural language question (in English or Bangla), which is
 
 #✅ Example Request
 ```bash
-curl -X GET "http://localhost:8000/ask?query=কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?"
+curl -X GET http://localhost:8000/ask?query=কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
 ```
 ---
 
