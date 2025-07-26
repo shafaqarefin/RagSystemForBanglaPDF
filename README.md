@@ -101,8 +101,10 @@ venv\Scripts\activate
 
 ```
 
-# Activate (macOS/Linux)
+### Activate (macOS/Linux)
 source venv/bin/activate
+
+
 ### Upgrade pip and install dependencies
 ```bash
 pip install --upgrade pip
