@@ -20,9 +20,10 @@ def getLLMResponse(chunks, query):
 
     Instructions(Read all carefully):
     - Use ONLY the information in the Context below to answer factual questions.If you are not entirely sure then provide with the most likely answer that is most sensible to you.
+
     - For analytical, follow-up, or conversational questions, rely on Chat History as needed.
     - Be precise and concise.
-    - If the answer is a single word or phrase, return ONLY that word or phrase in bangla with correct spelling.
+    - If the answer is a single word or phrase, return ONLY that word or phrase.
     - Do NOT include the questions or mcq options number,numerics or letter  like ("ক ", "A ","i ", etc.)
     - Correct obvious spelling mistakes in your final answer.
     - If you cannot find a definite answer, reply with Not found.
