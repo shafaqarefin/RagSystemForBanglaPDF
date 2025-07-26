@@ -1,12 +1,5 @@
-from dotenv import load_dotenv
+from fastapi import FastAPI
+from api.routes import router
 
-from app.ui.app import mainUI
-
-
-def main():
-    load_dotenv()
-    mainUI()
-
-
-if __name__ == "__main__":
-    main()
+app = FastAPI()
+app.include_router(router)
