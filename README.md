@@ -1,49 +1,219 @@
-PDF RAG SYSTEM BY SHAFAQ AREFN CHOWHDHURY
+# Bangla RAG System - Complete Setup Guide
 
-# Bangla RAG FastAPI Application
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue" alt="Python">
+  <img src="https://img.shields.io/badge/Framework-FastAPI-green" alt="Framework">
+  <img src="https://img.shields.io/badge/Framework-Langchain-yellow" alt="Langchain">
+  <img src="https://img.shields.io/badge/Framework-ChromaDB-blue" alt="ChromaDB">
 
-A Retrieval-Augmented Generation (RAG) system designed for Bangla language, built using FastAPI, LangChain, Cohere,HuggingFace Embeddings,ChromaDB and Groq LLM.  
-It extracts answers from a Bangla textbook PDF corpus with contextual chat history support.
+
+  
+  
+</div>
+
+## 🔧 Features
+- Bangla PDF text extraction and processing
+- Context-aware question answering with RAG using Langchain Buffer Memory
+- FastAPI backend
+- Integrations: Cohere reranker, HuggingFace embedding, Groq LLM
+- Langchain ChromaDB to store embeddings
+
+---
+
+## 💻 System Requirements
+- OS: Windows/macOS/Linux
+- Python 3.10+
+- Tesseract with Bangla Support and Poppler
+
+## 📦 Setup and Installation Steps
+
+### 1️⃣ Install System Dependencies
+
+#### 🪟 Windows 
+#### install python --version=3.10 following documentation
+#### Install tesseract wth bangla support
+- Tesseract OCR tool with Bangla language support  
+  #### 👉 [Download Tesseract](tesseract-ocr-w64-setup-5.5.0.20241111.exe)  for 64 bit windows system or find appropriate version here (https://digi.bib.uni-mannheim.de/tesseract)
+  #### After installing, For Bangla language capabiliteis  make sure to select bengali language in language script and language data option during installation. Select Bengali 
+  <img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/a415ddeb-be7f-481e-965c-4108abb51e94" />
+  <img width="300" height="60" alt="image" src="https://github.com/user-attachments/assets/3780c01e-4a50-41b3-9f20-6295dac6a252" />
+ 
+---
+
+### After that run in Command Prompt with Admin Privillege 
+```bash
+bangla-pdf-ocr-setup
+
+```
+Verify with this command
+```bash
+bangla-pdf-ocr-verify
+
+```
 
 
-## Requirements
 
-- Python 3.10 or higher
-- API Tokenss: Cohere, Groq,HuggingFaceHub
-- Packages listed in `requirements.txt`
+#### 🍎 macOS (using Homebrew)
+```bash
+brew install python@3.10
+brew install tesseract tesseract-lang
+brew install poppler
+```
+
+#### 🐧 Linux (Ubuntu/Debian)
+```bash
+sudo apt update
+sudo apt install python3.10 python3.10-venv
+sudo apt install tesseract-ocr tesseract-ocr-ben
+sudo apt install poppler-utils
+```
+
+---
+
+### 2️⃣ Set Up Python Environment
+
+```bash
+# Clone the repository
+git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git
+cd RagSystemForBanglaPDF
+
+# Create and activate virtual environment
+python -m venv venv
+
+# Activate (Windows)
+venv\Scripts\activate
+
+# Activate (macOS/Linux)
+source venv/bin/activate
+```
+
+### Upgrade pip and install dependencies
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+---
+
+### 🔑 API Key Configuration
+
+rename  `.env.example` file in the root directory to .env and add the following keys:
+
+
+
+You can get free  keys  after creating account there by simply logging in using google/github or signing up:
+
+- 🔗 [Cohere API Key](https://dashboard.cohere.com/api-keys)
+- 🔗 [Groq API Key](https://console.groq.com/keys)
+- 🔗 [Hugging Face API Token](https://huggingface.co/settings/tokens) (Use Free tier API Key provided)
+
+### Paste the keys in the apprpriate variables below.Copy and paste these into your .env file
+
+  ```env
+COHERE_API_KEY=your_cohere_key_here 
+GROQ_API_KEY=your_groq_key_here
+HUGGINGFACEHUB_API_TOKEN=your_hf_token_here
+```
 
 
 ---
 
-## Installation
-
-### 1. Clone the repository
-
-Open VsCode and run:
-
+### 🚀 Run the project from CLI Tool
 ```bash
-git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git in the terminal
+python cli.py
+```
 
-2.Install all requirments using:
-  pip install -r requirements.txt
+# Sample Input and Output
 
-3.Run python -m venv venv
+### Sample Input: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
+### Sample Answer: মামাকে
 
-4. In the env.local.example file create API tokens or keys free of cost and place into respective placeholders or uncomment the tokens there
-
-5.run the command
- ```bash
- bangla-ocr-setup in command prompt of windows with administrative privillege
-
- if tesseract is not present kindly install from
-
- tesseract-ocr-w64-setup-5.5.0.20241111.exe by going to this link or  and follow the steps for installation
-
- after successfull installation of tesseract please navigate to the folder if not already opened in vscode terminal and run
-
-python cli.py for command line interface interaction with RAG system
+### Sample Input: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
+### Sample Answer: শব্দুনাথ 
 
 
 
+# 📘 API Documentation - Bangla RAG System
+### 🖥️ Run FastAPI Server
+```bash
+uvicorn main:app --reload
+```
+
+### 🔗 Base URL
+http://localhost:8000
+
+### 📤 `GET /ask`
+
+### ➤ Description
+This endpoint accepts a query string and returns the answer generated by the RAG pipeline.
+
+### 🧠 Purpose
+Allows users to ask a natural language question (in English or Bangla), which is processed and answered using embedded document chunks and a language model.
+
+---
+
+### 📥 Request
+
+**Method:** `GET`  
+**Endpoint:** `/ask`  
+**Query Parameter:**
+- `query` (string, required) – The question you want to ask
+- http://localhost:8000/ask?query=""  (Paste this in the browser after running fast api as shown above)
+
+### ✅ Example Request
+```bash
+http://localhost:8000/ask?query=কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
+```
+---
+
+## 🧯 Troubleshooting
+
+### ❌ OCR Issues
+```bash
+tesseract --list-langs
+```
+Ensure `ben` (Bangla) is listed.
+
+### ❌ Python Errors
+```bash
+pip install --force-reinstall -r requirements.txt
+```
+
+### ❌ API Connection Problems
+- Make sure API keys are valid and not expired
+- Check firewall or network restrictions
+- Confirm external API services are up
+
+# Question and Answer
+## Q.1 What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
+Ans: I used the bangla-pdf-ocr library as traditional pdf extraction tools lack bangla encoding and text were garbled.Despite significantly improved text quality,there were still issues like not being able to extract correct spelling,spacing issues,line breaks etc.
+
+## Q.2 What chunking strategy did you choose (e.g. paragraph-based, sentence-based, character limit)? Why do you think it works well for semantic retrieval?
+Ans:I used RecursiveTextSplitter of Langchain due to its ability to detects heading or subsections also added seperators for both english and bangla which give uniformly embedded chunks.
 
 
+## Q.3 What embedding model did you use? Why did you choose it? How does it capture the meaning of the text?
+Ans: I used model  "intfloat/multilingual-e5-large".It was trained over 100 languages including bengali together which enables it to map different languages similar word togehter like the word cat and বিড়াল will have similar embeddings.Also it uses transformer based architecture to understand the context to determine embeddings also.Moreover it has a high score in HuggingFace Embedding model rank for mutli language support.
+
+## Q.4 How are you comparing the query with your stored chunks? Why did you choose this similarity method and storage setup?
+Ans: I used vector similarity intially which is a built in function of langchain chroma which uses cosine similarity internally to determine the top similar 10 chunks.This is one of the ways to extract large amount of more or less relevant chunks.
+
+## Q.5 How do you ensure that the question and the document chunks are compared meaningfully? What would happen if the query is vague or missing context?
+Ans: I further used a rerank model as cosine similarity can get irrelevant chunk.Using Coheres reranking  model="rerank-multilingual-v3.5" which is  optimsied for 100+ languages,assign relevance score to the top 10 received chunk initially based on context rather than instead of just vector distance.This increases getting the related chunks.
+
+
+## Q.6 Do the results seem relevant? If not, what might improve them (e.g. better chunking, better embedding model, larger document)?
+Ans: Yes results seem overall relevant but there is some inconsistency like for example the question  বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল? answer actually lies in the mcq answer index but due to limited chunk size as free tier LLMs wont accept over a certain amount token,this mcq answers index was missed out from the chunk so the LLM had to guess from the question and story passage context which didnot explicitly mention the age.Moreover embeddings dont always capture meaning fully so sometimes irrelevant chunks are received so a better embedding model that can capture context and meaning fully would improve the results more.Lastly better prompts would definitely improve results as even though chat history was provided llm struggled to understand when to reply from context only and when to refer to chat history.
+
+
+
+
+
+
+
+
+
+
+
+## 👨‍💻 Author
+Made by [Shafaq Arefin Chowdhury](https://github.com/shafaqarefin)
