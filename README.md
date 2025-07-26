@@ -1,76 +1,84 @@
-# Bangla RAG System
+# Bangla RAG System - Complete Setup Guide
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-blue" alt="Python">
-  <img src="https://img.shields.io/badge/Framework-FastAPI-green" alt="Framework">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
-</div>
+## System Requirements
+- Windows/macOS/Linux
+- Python 3.10+
+- Minimum 8GB RAM
+- 5GB free disk space
 
-A Retrieval-Augmented Generation (RAG) system for Bangla language PDFs. This project extracts Bangla text from scanned textbooks and provides accurate, grounded answers to natural language questions via a FastAPI interface.
+## Complete Installation
 
----
+1. First install these system packages:
 
-## ✨ Features
+**Windows:**
+choco install python --version=3.10
+choco install tesseract
+choco install poppler
 
-- 📄 **Bangla PDF OCR & Text Chunking**
-- 🤖 **Conversational QA System** with context memory
-- ⚡ **FastAPI** backend with auto-generated Swagger UI
-- 🔍 **Semantic Retrieval** using vector search
-- 🔗 Integrated with **Cohere**, **Groq**, and **HuggingFace**
+text
 
----
+**macOS:**
+brew install python@3.10
+brew install tesseract tesseract-lang
+brew install poppler
 
-## 🚀 Installation
+text
 
-### 1. Clone the Repository
+**Linux (Ubuntu/Debian):**
+sudo apt update
+sudo apt install python3.10 python3.10-venv
+sudo apt install tesseract-ocr tesseract-ocr-ben
+sudo apt install poppler-utils
 
-```bash
-git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git
-cd RagSystemForBanglaPDF
+text
 
-```
+2. Setup Python environment:
+python -m venv venv
+venv\Scripts\activate # Windows
+source venv/bin/activate # macOS/Linux
+pip install --upgrade pip
+pip install -r requirements.txt
 
-## 🚀 Install Dependencies
+text
 
-### 1. Clone the Repository
+## API Key Configuration
+Create a `.env` file with these keys (get them from respective providers):
+COHERE_API_KEY=your_cohere_key_here
+GROQ_API_KEY=your_groq_key_here
+HUGGINGFACEHUB_API_TOKEN=your_hf_token_here
 
-```bash
-git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git
-cd RagSystemForBanglaPDF
+text
 
-```
+## Running the System
 
-## 🚀 Setup Tesseract and Poppler
+1. For command line interface:
+python cli.py
 
-### 1. Clone the Repository
+text
 
-```bash
+2. For API server:
+uvicorn main:app --reload
 
+text
 
-```
+3. To test the API:
+curl -X POST "http://localhost:8000/query" -H "Content-Type: application/json" -d '{"question":"Your question here"}'
 
-## 🚀 Run CLI command for command prompt interaction with RAG system
+text
 
-### 1. Clone the Repository
+## Troubleshooting
 
-```bash
+**OCR Issues:**
+tesseract --list-langs # Verify Bangla is installed
 
+text
 
-```
+**Python Errors:**
+pip install --force-reinstall -r requirements.txt
 
-## 🚀 Copy and run in terminal for fast api
+text
 
-### 1. Run this command in terminal to activate API
-
-```bash
-
-
-```
-### 1. Run this command in terminal to test API  using any query
-
-```bash
-
-
-```
-
-
+**API Connection Problems:**
+- Verify your API keys
+- Check service status pages
+- Ensure no firewall blocking
