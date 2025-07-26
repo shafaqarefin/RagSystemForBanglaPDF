@@ -151,6 +151,10 @@ pip install --force-reinstall -r requirements.txt
 - Check firewall or network restrictions
 - Confirm external API services are up
 
+### Question and Answer
+What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
+
+
 
 ## 👨‍💻 Author
 Made by [Shafaq Arefin Chowdhury](https://github.com/shafaqarefin)
