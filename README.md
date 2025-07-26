@@ -27,12 +27,18 @@
 
 ### 1️⃣ Install System Dependencies
 
-#### 🪟 Windows (using Chocolatey)
-```bash
-choco install python --version=3.10
-choco install tesseract
+#### 🪟 Windows 
+install python --version=3.10 following documentation
+install tesseract 
 choco install poppler
+
+### After that run in Command Prompt with Admin Privillege
+```bash
+bangla-pdf-ocr-setup
+
+
 ```
+
 
 #### 🍎 macOS (using Homebrew)
 ```bash
@@ -136,4 +142,4 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 ## 👨‍💻 Author
-Made by [Shafaq refin](https://github.com/shafaqarefin)
+Made by [Shafaq Arefin Chowdhury](https://github.com/shafaqarefin)
