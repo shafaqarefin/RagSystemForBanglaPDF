@@ -26,5 +26,4 @@ def RagPipeLine(query):
     similarEmbeddings = loadSimilarEmbeddings(query)
     answer = getLLMResponse(similarEmbeddings, query)
     formattedAnswer = extract_answer(answer)
-    print(formattedAnswer)
     return answer
