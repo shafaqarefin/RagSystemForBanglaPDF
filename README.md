@@ -11,12 +11,27 @@
   
 </div>
 
-## 🔧 Features
-- Bangla PDF text extraction and processing
-- Context-aware question answering with RAG using Langchain Buffer Memory
-- FastAPI backend
-- Integrations: Cohere reranker, HuggingFace embedding, Groq LLM
-- Langchain ChromaDB to store embeddings
+# ⚙️ Tools, Libraries, and Packages Used
+
+### 🔧 System & Utility Tools
+- **Tesseract OCR**: Optical Character Recognition tool used to extract Bangla text from images/PDFs.
+- **Poppler**: Used with Python libraries like `pdf2image` to convert PDF pages into images for OCR.
+
+---
+
+### 🐍 Python Libraries
+
+#### 🧠 AI / NLP / Embeddings
+- **Langchain**: Used  buffer memory for chat history,recursive text splitter for chunking  and vector stores like chromadb
+  storing and retrieving embeddings.
+- **LLM**: LLM  model qwen/qwen3-32b which supports mutliple languages hosted by Groq.
+- **Sentence-transformers**:  Model intfloat/multilingual-e5-large hosted by hugging face for high-quality text embeddings.
+- **Reranker**: Used Cohere’s rerank-multilingual-v3.5 model for reranking chunks   .
+- ***bangla-pdf-ocr*** package for extracting pdf with bangla 
+
+#### 🌐 Web API
+- **fastapi**: Main web framework to expose the RAG system as an API.
+- **uvicorn**: ASGI server to run the FastAPI app.
 
 ---
 
@@ -25,7 +40,7 @@
 - Python 3.10+
 - Tesseract with Bangla Support and Poppler
 
-## 📦 Setup and Installation Steps
+# 📦 Setup and Installation Steps
 
 ### 1️⃣ Install System Dependencies
 
