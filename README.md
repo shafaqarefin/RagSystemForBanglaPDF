@@ -82,7 +82,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-# Upgrade pip and install dependencies
+### Upgrade pip and install dependencies
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
@@ -90,28 +90,30 @@ pip install -r requirements.txt
 
 ---
 
-## 🔑 API Key Configuration
+### 🔑 API Key Configuration
 
 rename  `.env.example` file in the root directory to .env and add the following keys:
 
-```env
+
+
+You can get free  keys  after creating account there by simply loggin in using google or signing up:
+
+- 🔗 [Cohere API Key](https://dashboard.cohere.com/api-keys)
+- 🔗 [Groq API Key](https://console.groq.com/keys)
+- 🔗 [Hugging Face API Token](https://huggingface.co/settings/tokens) (Use Free tier API Key provided)
+
+### Paste the keys in the apprpriate variables below.Copy and paste these into your .env file
+
+  ```env
 COHERE_API_KEY=your_cohere_key_here 
 GROQ_API_KEY=your_groq_key_here
 HUGGINGFACEHUB_API_TOKEN=your_hf_token_here
 ```
 
-You can get the keys from:
-
-- 🔗 [Cohere API Key](https://dashboard.cohere.com/api-keys)
-- 🔗 [Groq API Key](https://console.groq.com/keys)
-- 🔗 [Hugging Face API Token](https://huggingface.co/settings/tokens)
-
 
 ---
 
-## 🚀 Running the Project
-
-### ▶️ Run CLI Tool
+### 🚀 Run the project from CLI Tool
 ```bash
 python cli.py
 ```
