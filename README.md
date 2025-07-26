@@ -129,7 +129,7 @@ curl -X POST "http://localhost:8000/query" \
 ```
 
 You can also open your browser at:  
-[http://localhost:8000/docs](http://localhost:8000/docs) to use Swagger UI.
+[http://localhost:8000/docs](http://localhost:8000/docs) 
 
 ---
 
