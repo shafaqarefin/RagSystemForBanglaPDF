@@ -101,7 +101,7 @@ rename  `.env.example` file in the root directory to .env and add the following 
 
 
 
-You can get free  keys  after creating account there by simply loggin in using google or signing up:
+You can get free  keys  after creating account there by simply logging in using google/github or signing up:
 
 - 🔗 [Cohere API Key](https://dashboard.cohere.com/api-keys)
 - 🔗 [Groq API Key](https://console.groq.com/keys)
