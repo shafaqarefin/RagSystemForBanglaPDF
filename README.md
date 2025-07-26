@@ -116,6 +116,15 @@ You can get the keys from:
 python cli.py
 ```
 
+#Sample Input and Output
+
+###Sample Input: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
+### Sample Answer: মামাকে
+
+### Sample Input: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
+### Sample Answer: ঘ শব্দুনাথ 
+
+
 
 # 📘 API Documentation - Bangla RAG System
 ### 🖥️ Run FastAPI Server
