@@ -23,7 +23,7 @@ Open VsCode and run:
 
 ```bash
 git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git in the terminal
-
+```
 2.Install all requirments using:
   pip install -r requirements.txt
 
