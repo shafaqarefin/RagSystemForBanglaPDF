@@ -80,23 +80,32 @@ venv\Scripts\activate
 
 # Activate (macOS/Linux)
 source venv/bin/activate
+```
 
 # Upgrade pip and install dependencies
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 ---
 
-### 🔐 3️⃣ Add API Keys
+## 🔑 API Key Configuration
 
-Create a `.env` file in the root folder with:
+rename  `.env.example` file in the root directory to .env and add the following keys:
 
-```bash
-COHERE_API_KEY=your_cohere_key_here
+```env
+COHERE_API_KEY=your_cohere_key_here 
 GROQ_API_KEY=your_groq_key_here
 HUGGINGFACEHUB_API_TOKEN=your_hf_token_here
 ```
+
+You can get the keys from:
+
+- 🔗 [Cohere API Key](https://dashboard.cohere.com/api-keys)
+- 🔗 [Groq API Key](https://console.groq.com/keys)
+- 🔗 [Hugging Face API Token](https://huggingface.co/settings/tokens)
+
 
 ---
 
@@ -142,12 +151,6 @@ pip install --force-reinstall -r requirements.txt
 - Check firewall or network restrictions
 - Confirm external API services are up
 
----
-
-## 📄 License
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## 👨‍💻 Author
 Made by [Shafaq Arefin Chowdhury](https://github.com/shafaqarefin)
