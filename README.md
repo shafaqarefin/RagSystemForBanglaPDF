@@ -129,7 +129,7 @@ python cli.py
 ### Sample Answer: মামাকে
 
 ### Sample Input: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
-### Sample Answer: ঘ শব্দুনাথ 
+### Sample Answer: শব্দুনাথ 
 
 
 
