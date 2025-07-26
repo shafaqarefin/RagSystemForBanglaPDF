@@ -3,8 +3,8 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue" alt="Python">
   <img src="https://img.shields.io/badge/Framework-FastAPI-green" alt="Framework">
-  <img src="https://img.shields.io/badge/Framework-FastAPI-yellow" alt="Langchain">
-  <img src="https://img.shields.io/badge/Framework-FastAPI-yellow" alt="ChromaDB">
+  <img src="https://img.shields.io/badge/Framework-Langchain-yellow" alt="Langchain">
+  <img src="https://img.shields.io/badge/Framework-ChromaDB-blue" alt="ChromaDB">
 
 
   
