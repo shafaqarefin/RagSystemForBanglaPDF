@@ -8,8 +8,8 @@
 
 ## 🔧 Features
 - Bangla PDF text extraction and processing
-- Context-aware question answering with RAG
-- FastAPI backend with interactive Swagger UI
+- Context-aware question answering with RAG using Langchain Buffer Memory
+- FastAPI backend
 - Support for conversational memory
 - Integrations: Cohere, HuggingFace, Groq
 
