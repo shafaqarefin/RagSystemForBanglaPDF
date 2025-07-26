@@ -30,7 +30,7 @@ cd RagSystemForBanglaPDF
 
 ```
 
-## 🚀 Installation
+## 🚀 Install Dependencies
 
 ### 1. Clone the Repository
 
@@ -40,33 +40,36 @@ cd RagSystemForBanglaPDF
 
 ```
 
-## 🚀 Installation
+## 🚀 Setup Tesseract and Poppler
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git
-cd RagSystemForBanglaPDF
+
 
 ```
 
-## 🚀 Installation
+## 🚀 Run CLI command for command prompt interaction with RAG system
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git
-cd RagSystemForBanglaPDF
+
 
 ```
 
-## 🚀 Installation
+## 🚀 Copy and run in terminal for fast api
 
-### 1. Clone the Repository
+### 1. Run this command in terminal to activate API
 
 ```bash
-git clone https://github.com/shafaqarefin/RagSystemForBanglaPDF.git
-cd RagSystemForBanglaPDF
+
+
+```
+### 1. Run this command in terminal to test API  using any query
+
+```bash
+
 
 ```
 
