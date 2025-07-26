@@ -85,7 +85,7 @@ sudo apt install poppler-utils
 
 ---
 
-### 2️⃣ Set Up Python Environment
+### 2️⃣ In git bash or VScode bash terminal,Set Up Python Environment
 
 ```bash
 # Clone the repository
