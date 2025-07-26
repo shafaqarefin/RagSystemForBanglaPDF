@@ -18,13 +18,7 @@
 ## 💻 System Requirements
 - OS: Windows/macOS/Linux
 - Python 3.10+
-- Tesseract OCR tool with Bangla language support  
-  👉 [Download Tesseract](https://github.com/tesseract-ocr/tesseract)  
-  ➕ For Bangla language data (`ben.traineddata`), download from:  
-  https://github.com/tesseract-ocr/tessdata/blob/main/ben.traineddata  
-  Place the file in your Tesseract `tessdata` folder (e.g., `C:\Program Files\Tesseract-OCR\tessdata`)
-
----
+- Tesseract Bangla Support and Poppler
 
 ## 📦 Installation Steps
 
@@ -33,13 +27,17 @@
 #### 🪟 Windows 
 install python --version=3.10 following documentation
 install tesseract 
-choco install poppler
+- Tesseract OCR tool with Bangla language support  
+  👉 [Download Tesseract](tesseract-ocr-w64-setup-5.5.0.20241111.exe)  for 64 bit system
+  ➕After installing, For Bangla language capabiliteis  make sure to select bengali language in language script and language data option in component installation step.
+  <img width="638" height="221" alt="image" src="https://github.com/user-attachments/assets/a415ddeb-be7f-481e-965c-4108abb51e94" />
+  <img width="520" height="28" alt="image" src="https://github.com/user-attachments/assets/3780c01e-4a50-41b3-9f20-6295dac6a252" />
+  Select Bengali 
+---
 
 ### After that run in Command Prompt with Admin Privillege
 ```bash
 bangla-pdf-ocr-setup
-
-
 ```
 
 
