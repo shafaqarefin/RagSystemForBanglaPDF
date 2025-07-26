@@ -1,11 +1,6 @@
-from PyPDF2 import PdfReader
+from bangla_pdf_ocr import process_pdf
 
 
-def getPdfText(pdfDocs):
-    text = ""
-
-    for pdfDoc in pdfDocs:
-        pdf_reader = PdfReader(pdfDoc)
-        for page in pdf_reader.pages:
-            text += page.extract_text()
+def getPdfText(path):
+    text = process_pdf(path)
     return text
