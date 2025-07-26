@@ -49,7 +49,7 @@
 #### Install tesseract wth bangla support
 - Tesseract OCR tool with Bangla language support  
   #### 👉 [Download Tesseract](tesseract-ocr-w64-setup-5.5.0.20241111.exe)  for 64 bit windows system or find appropriate version here (https://digi.bib.uni-mannheim.de/tesseract)
-  #### After downloading during installation, For Bangla language capabiliteis  make sure to select bengali language in language script and language data option during installation. Select Bengali 
+  #### After downloading,during the installation part, for Bangla language capabiliteis  make sure to select bengali language in language script and language data option during installation. Select Bengali 
   <img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/a415ddeb-be7f-481e-965c-4108abb51e94" />
   <img width="300" height="60" alt="image" src="https://github.com/user-attachments/assets/3780c01e-4a50-41b3-9f20-6295dac6a252" />
  
