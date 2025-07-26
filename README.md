@@ -27,7 +27,7 @@
 - **LLM**: LLM  model qwen/qwen3-32b which supports mutliple languages hosted by Groq.
 - **Sentence-transformers**:  Model intfloat/multilingual-e5-large hosted by hugging face for high-quality text embeddings.
 - **Reranker**: Used Cohere’s rerank-multilingual-v3.5 model for reranking chunks   .
-- ***bangla-pdf-ocr*** package for extracting pdf with bangla 
+- **bangla-pdf-ocr** package for extracting pdf with bangla 
 
 #### 🌐 Web API
 - **fastapi**: Main web framework to expose the RAG system as an API.
