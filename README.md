@@ -98,10 +98,11 @@ python -m venv venv
 # Activate (Windows)
 venv\Scripts\activate
 
-# Activate (macOS/Linux)
-source venv/bin/activate
+
 ```
 
+# Activate (macOS/Linux)
+source venv/bin/activate
 ### Upgrade pip and install dependencies
 ```bash
 pip install --upgrade pip
