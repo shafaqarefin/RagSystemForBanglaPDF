@@ -27,6 +27,7 @@ def getLLMResponse(chunks, query):
     - Do NOT include the questions or mcq options number,numerics or letter  like ("ক ", "A ","i ", etc.)
     - Correct obvious spelling mistakes in your final answer.
     - If you cannot find a definite answer, reply with Not found.
+    -Answers should be in bangla with correct spelling found in context
 
 
     Context:
