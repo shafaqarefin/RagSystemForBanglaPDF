@@ -70,7 +70,7 @@ source venv/bin/activate
 # Upgrade pip and install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
-```
+```bash
 
 ---
 
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 Create a `.env` file in the root folder with:
 
-```
+```bash
 COHERE_API_KEY=your_cohere_key_here
 GROQ_API_KEY=your_groq_key_here
 HUGGINGFACEHUB_API_TOKEN=your_hf_token_here
