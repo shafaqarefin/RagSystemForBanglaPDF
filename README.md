@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue" alt="Python">
   <img src="https://img.shields.io/badge/Framework-FastAPI-green" alt="Framework">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
+  
 </div>
 
 ## 🔧 Features
@@ -18,7 +18,7 @@
 ## 💻 System Requirements
 - OS: Windows/macOS/Linux
 - Python 3.10+
-- Tesseract Bangla Support and Poppler
+- Tesseract with Bangla Support and Poppler
 
 ## 📦 Installation Steps
 
