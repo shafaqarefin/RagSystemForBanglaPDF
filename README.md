@@ -4,19 +4,34 @@
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue" alt="Python">
   <img src="https://img.shields.io/badge/Framework-FastAPI-green" alt="Framework">
   <img src="https://img.shields.io/badge/Framework-Langchain-yellow" alt="Langchain">
-  <img src="https://img.shields.io/badge/Framework-ChromaDB-blue" alt="ChromaDB">
+  <img src="https://img.shields.io/badge/Database-ChromaDB-red" alt="ChromaDB">
 
 
   
   
 </div>
 
-## 🔧 Features
-- Bangla PDF text extraction and processing
-- Context-aware question answering with RAG using Langchain Buffer Memory
-- FastAPI backend
-- Integrations: Cohere reranker, HuggingFace embedding, Groq LLM
-- Langchain ChromaDB to store embeddings
+# ⚙️ Tools, Libraries, and Packages Used
+
+### 🔧 System & Utility Tools
+- **Tesseract OCR**: Optical Character Recognition tool used to extract Bangla text from images/PDFs.
+- **Poppler**: Used with Python libraries like `pdf2image` to convert PDF pages into images for OCR.
+
+---
+
+### 🐍 Python Libraries
+
+#### 🧠 AI / NLP / Embeddings
+- **Langchain**: Used  buffer memory for chat history,recursive text splitter for chunking  and vector stores like chromadb
+  storing and retrieving embeddings.
+- **LLM**: LLM  model qwen/qwen3-32b which supports mutliple languages hosted by Groq.
+- **Sentence-transformers**:  Model intfloat/multilingual-e5-large hosted by hugging face for high-quality text embeddings.
+- **Reranker**: Used Cohere’s rerank-multilingual-v3.5 model for reranking chunks   .
+- **bangla-pdf-ocr** package for extracting pdf with bangla 
+
+#### 🌐 Web API
+- **fastapi**: Main web framework to expose the RAG system as an API.
+- **uvicorn**: ASGI server to run the FastAPI app.
 
 ---
 
@@ -25,7 +40,7 @@
 - Python 3.10+
 - Tesseract with Bangla Support and Poppler
 
-## 📦 Setup and Installation Steps
+# 📦 Setup and Installation Steps
 
 ### 1️⃣ Install System Dependencies
 
@@ -34,7 +49,7 @@
 #### Install tesseract wth bangla support
 - Tesseract OCR tool with Bangla language support  
   #### 👉 [Download Tesseract](tesseract-ocr-w64-setup-5.5.0.20241111.exe)  for 64 bit windows system or find appropriate version here (https://digi.bib.uni-mannheim.de/tesseract)
-  #### After installing, For Bangla language capabiliteis  make sure to select bengali language in language script and language data option during installation. Select Bengali 
+  #### After downloading,during the installation part, for Bangla language capabiliteis  make sure to select bengali language in language script and language data option during installation. Select Bengali 
   <img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/a415ddeb-be7f-481e-965c-4108abb51e94" />
   <img width="300" height="60" alt="image" src="https://github.com/user-attachments/assets/3780c01e-4a50-41b3-9f20-6295dac6a252" />
  
@@ -70,7 +85,7 @@ sudo apt install poppler-utils
 
 ---
 
-### 2️⃣ Set Up Python Environment
+### 2️⃣ In git bash or VScode bash terminal,Set Up Python Environment
 
 ```bash
 # Clone the repository
