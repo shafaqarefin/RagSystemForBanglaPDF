@@ -30,13 +30,13 @@
 ### 1️⃣ Install System Dependencies
 
 #### 🪟 Windows 
-install python --version=3.10 following documentation
-install tesseract 
+#### install python --version=3.10 following documentation
+#### Install tesseract wth bangla support
 - Tesseract OCR tool with Bangla language support  
-  👉 [Download Tesseract](tesseract-ocr-w64-setup-5.5.0.20241111.exe)  for 64 bit system or find appropriate version here (https://digi.bib.uni-mannheim.de/tesseract)
+  👉 [Download Tesseract](tesseract-ocr-w64-setup-5.5.0.20241111.exe)  for 64 bit windows system or find appropriate version here (https://digi.bib.uni-mannheim.de/tesseract)
   After installing, For Bangla language capabiliteis  make sure to select bengali language in language script and language data option during installation.
-  <img width="638" height="221" alt="image" src="https://github.com/user-attachments/assets/a415ddeb-be7f-481e-965c-4108abb51e94" />
-  <img width="520" height="28" alt="image" src="https://github.com/user-attachments/assets/3780c01e-4a50-41b3-9f20-6295dac6a252" />
+  <img width="200" height="100" alt="image" src="https://github.com/user-attachments/assets/a415ddeb-be7f-481e-965c-4108abb51e94" />
+  <img width="200" height="40" alt="image" src="https://github.com/user-attachments/assets/3780c01e-4a50-41b3-9f20-6295dac6a252" />
   Select Bengali 
 ---
 
