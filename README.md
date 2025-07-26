@@ -20,7 +20,7 @@
 - Python 3.10+
 - Tesseract with Bangla Support and Poppler
 
-## 📦 Installation Steps
+## 📦 Setup and Installation Steps
 
 ### 1️⃣ Install System Dependencies
 
