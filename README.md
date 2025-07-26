@@ -158,7 +158,7 @@ Allows users to ask a natural language question (in English or Bangla), which is
 **Endpoint:** `/ask`  
 **Query Parameter:**
 - `query` (string, required) – The question you want to ask
-- http://localhost:8000/ask?query=কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে? (Paste this in the browser after running fast api as shown above)
+- http://localhost:8000/ask?query=""  (Paste this in the browser after running fast api as shown above)
 
 #✅ Example Request
 ```bash
