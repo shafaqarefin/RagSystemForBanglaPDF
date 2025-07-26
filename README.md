@@ -35,10 +35,17 @@ install tesseract
   Select Bengali 
 ---
 
-### After that run in Command Prompt with Admin Privillege
+### After that run in Command Prompt with Admin Privillege 
 ```bash
 bangla-pdf-ocr-setup
+
 ```
+Verify with this command
+```bash
+bangla-pdf-ocr-verify
+
+```
+
 
 
 #### 🍎 macOS (using Homebrew)
